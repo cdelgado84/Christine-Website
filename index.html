@@ -22,6 +22,14 @@
     </script>
 </head>
 <body class="bg-secondary text-textDark">
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="firstName" />
+        <input type="text" name="lastName" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <select name="serviceType"></select>
+        <textarea name="message"></textarea>
+      </form>
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-sm z-50">
         <div class="container mx-auto px-6 py-4">
