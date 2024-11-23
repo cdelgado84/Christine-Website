@@ -230,58 +230,65 @@
 
             <div class="max-w-4xl mx-auto">
                 <div class="bg-secondary rounded-lg shadow-lg p-8">
-                    <form name="contact" netlify class="space-y-6">
-                        <!-- Name and Lastname Grid -->
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-gray-700 font-medium mb-2">First Name</label>
-                                <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
-                            </div>
-                            <div>
-                                <label for="lastname" class="block text-gray-700 font-medium mb-2">Last Name</label>
-                                <input type="text" name="lastname" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
-                            </div>
+                            <p>
+                                <label class="block">
+                                    <span class="text-gray-700 font-medium mb-2 block">Your Name:</span>
+                                    <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label class="block">
+                                    <span class="text-gray-700 font-medium mb-2 block">Your Last Name:</span>
+                                    <input type="text" name="lastname" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
+                                </label>
+                            </p>
                         </div>
                     
-                        <!-- Email and Phone Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                                <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
-                            </div>
+                            <p>
+                                <label class="block">
+                                    <span class="text-gray-700 font-medium mb-2 block">Your Email:</span>
+                                    <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label class="block">
+                                    <span class="text-gray-700 font-medium mb-2 block">Your Phone:</span>
+                                    <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
+                                </label>
+                            </p>
                         </div>
                     
-                        <!-- Service Type -->
-                        <div>
-                            <label for="service" class="block text-gray-700 font-medium mb-2">Type of Service</label>
-                            <select name="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
-                                <option value="">Select a service...</option>
-                                <option value="individual">Individual Therapy</option>
-                                <option value="couples">Couples Therapy</option>
-                                <option value="online">Online Therapy</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+                        <p>
+                            <label class="block">
+                                <span class="text-gray-700 font-medium mb-2 block">Type of Service:</span>
+                                <select name="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="individual">Individual Therapy</option>
+                                    <option value="couples">Couples Therapy</option>
+                                    <option value="online">Online Therapy</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </label>
+                        </p>
                     
-                        <!-- Message -->
-                        <div>
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                            <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required></textarea>
-                        </div>
+                        <p>
+                            <label class="block">
+                                <span class="text-gray-700 font-medium mb-2 block">Message:</span>
+                                <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition duration-200" required></textarea>
+                            </label>
+                        </p>
                     
-                        <!-- Submit Button -->
-                        <div class="text-center">
+                        <p class="text-center">
                             <button type="submit" class="bg-pink-600 text-white px-8 py-3 rounded-lg hover:bg-pink-700 transition duration-300 inline-flex items-center">
                                 <span>Send Message</span>
                                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                 </svg>
                             </button>
-                        </div>
+                        </p>
                     </form>
                 </div>
 
