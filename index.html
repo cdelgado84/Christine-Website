@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#F8E1E7',
+                        primary: '#FFFFFF', //F8E1E7 --> old pink
                         secondary: '#FAF7F5',
                         textDark: '#2D3748',
                     }
@@ -23,15 +23,18 @@
 </head>
 <body class="bg-secondary text-textDark">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
+    <nav class="fixed w-full bg-[#191970] text-white shadow-sm z-50"> <!-- changed this line-->
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-semibold">Christine Wright</div>
+                <div class="flex flex-col">
+                    <div class="text-xl font-semibold">Christine Wright</div>
+                    <p class="text-sm text-gray-400">Registered Psychotherapist (Qualifying)</p>
+                </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-pink-600 transition-colors">Home</a>
-                    <a href="#about" class="hover:text-pink-600 transition-colors">About</a>
-                    <a href="#services" class="hover:text-pink-600 transition-colors">Services</a>
-                    <a href="#contact" class="hover:text-pink-600 transition-colors">Contact</a>
+                    <a href="#home" class="text-white hover:text-purple-300 transition-colors">Home</a>
+                    <a href="#about" class="text-white hover:text-purple-300 transition-colors">About</a>
+                    <a href="#services" class="text-white hover:text-purple-300 transition-colors">Services</a>
+                    <a href="#contact" class="text-white hover:text-purple-300 transition-colors">Contact</a>
                     <div class="flex items-center space-x-4">
                         <a href="https://wa.me/+16478825958" target="_blank" class="text-green-600 hover:text-green-700 transition-colors" title="Contact via WhatsApp">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -70,7 +73,6 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">Connect with Christine</h1>
-                    <p class="text-xl mb-8">Specialized in Addiction Treatment and Mental Health</p>
                     <div class="flex justify-center md:justify-start">
                     <a href="#contact">
                     <button class="bg-pink-600 text-white px-8 py-3 rounded-lg hover:bg-pink-700 transition duration-300">
@@ -94,37 +96,18 @@
                     <img src="assets/images/photo-1544027993-37dbfe43562a.jpg" alt="Therapy Office" class="rounded-lg shadow-lg w-full h-auto"/>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                    <h2 class="text-3xl font-bold mb-6">Meet Your Therapist</h2>
+                    <h3 class="text-1xl font-bold mb-2">Hey there, I'm Christine, your therapist!</h3>
                     <div class="space-y-4">
                         <p class="text-gray-600">
-                            I have a passion for helping others reconnect with themselves as they navigate life's challenges. I'm here to create a safe, supportive space for you to explore your thoughts and feelings. 
+                            As a registered psychotherapist (Qualifying) with the College of Registered Psychotherapists of Ontario (CRPO), I offer both in-person therapy in Whitby, Ontario, and online sessions, whichever works best for you. Wheter you prefer meeting face-to-face or connecting from the comfort of your couch, I'm here to support you.
                         </p>
                         <p class="text-gray-600">
-                            I believe in creating a safe, non-judgmental space where you can explore your challenges and work towards positive change. My expertise in addiction treatment allows me to provide specialized support for those struggling with substance use and behavioral addictions.
+                            I specialize in helping clients navigate addiction, stress, life transations, anxiety, and depression, drawing on over 17 years of experience in various clinical and community settings. Supporting others is truly my passion, and I feel privileged to walk alongside my clients on their personal journeys.
                         </p>
-                        <div class="mt-8">
-                            <h3 class="text-xl font-semibold mb-4">Credentials</h3>
-                            <ul class="space-y-2 text-gray-600">
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    M.A. Candidate Training Counsellor.
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    York University, Toronto, Ontario, Canada
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    Trained Mindfulness Facilitator.
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="text-gray-600">
+                            Therapy is all about building a meaningful connection. It's far beyond just having a conversation. Reach out, and let's connect. You can also find me on Instagram at <a href="https://instagram.com/connect.with.christine" target="_blank" class="text-pink-600 hover:text-pink-700 transition-colors">@connect.with.christine</a> for more insights, inspiration, and a deeper look into my approach.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -135,10 +118,9 @@
    <section id="services" class="py-20 bg-secondary">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4">My Services</h2>
+            <h2 class="text-3xl font-bold mb-4">Offerings</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                Offering comprehensive psychological services tailored to your individual needs. 
-                Available both in-person and online to provide support wherever you are.
+                Online 
             </p>
         </div>
         
@@ -147,24 +129,10 @@
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="assets/images/photo-1516302752625-fcc3c50ae61f.jpg" alt="Individual Therapy" class="w-full h-48 object-cover"/>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-3">Gestalt Therapy</h3>
+                    <h3 class="text-xl font-semibold mb-3">Complementary 30-minute Meet and Greet</h3>
                     <p class="text-gray-600 mb-4">
-                        Bringing understanding to how past experiences influence current behaviour.
+                        A chance for us to connect and see how we can work together. We can discusss your needs and explore how I can support you.
                     </p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            60-minute sessions
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Personalized treatment plan
-                        </li>
-                    </ul>
                 </div>
             </div>
 
@@ -172,25 +140,10 @@
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="assets/images/photo-1521791136064-7986c2920216.jpg" alt="Couples Therapy" class="w-full h-48 object-cover"/>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-3">Acceptance and Commitment Therapy (ACT)</h3>
+                    <h3 class="text-xl font-semibold mb-3">Individual Psychotherapy</h3>
                     <p class="text-gray-600 mb-4">
-                        Moving towards accepting thoughts and feelings rather than fighting them. 
-                        Looking at values and whats important.
+                        Sessions lasting 60 to 90 minutes, based on what feels right for you. Covered by insurance plans that include registered psychotherapists.
                     </p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            90-minute sessions
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Goal setting
-                        </li>
-                    </ul>
                 </div>
             </div>
 
@@ -198,24 +151,10 @@
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="assets/images/photo-1609234656388-0ff363383899.jpg" alt="Online Therapy" class="w-full h-48 object-cover"/>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-3">Cognitive Behavioural Therapy (CBT)</h3>
+                    <h3 class="text-xl font-semibold mb-3">Individual Psychological Services</h3>
                     <p class="text-gray-600 mb-4">
-                        Identifying and challenging negative thought patterns and behaviours.
+                        Sessions lasting 60 to 90 minutes, provided under the supervision of a psychologist. Covered by insurance plans that include registered psychologists.
                     </p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Flexible scheduling
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Secure platform
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -334,12 +273,12 @@
     </section>
 
    <!-- Footer -->
-   <footer class="bg-gray-800 text-white py-12">
+   <footer class="bg-[#191970] text-white py-12">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0">
                 <h3 class="text-xl font-semibold mb-2">Christine Wright</h3>
-                <p class="text-gray-400">Professional Psychological Care</p>
+                <p class="text-gray-400">Registered Psycotherapist (Qualifying) </p>
             </div>
             
             <!-- Social Links -->
@@ -361,7 +300,7 @@
             </div>
 
             <div class="text-center md:text-right">
-                <p class="mb-2">&copy; 2024 Professional Psychological Care.</p>
+                <p class="mb-2">&copy; <span id="current-year">2025</span> Registered Psycotherapist (Qualifying)</p>
                 <p class="text-gray-400 text-sm">All rights reserved.</p>
             </div>
         </div>
